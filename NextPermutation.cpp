@@ -26,7 +26,7 @@ public:
 };
 
 int main() {
-    Solution sol;
+    Solution s;
     vector<int> nums;
     int n;
     cin >> n;
@@ -36,9 +36,11 @@ int main() {
         nums.push_back(x);
     }
 
-    vector<int> result = sol.nextPermutation(nums);
+    vector<int> result = s.nextPermutation(nums);
 
-    for (int x : result) cout << x << " ";
+    for (int x : result) {
+        cout << x << " ";
+    }
     cout << endl;
 
     return 0;
